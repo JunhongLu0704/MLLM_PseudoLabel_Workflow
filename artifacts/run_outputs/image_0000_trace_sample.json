@@ -1,0 +1,2058 @@
+{
+  "image_summary": {
+    "image_id": 0,
+    "num_proposals": 6,
+    "num_valid_proposals": 6,
+    "mllm_prior_status": "success",
+    "duplicate_cluster_count": 2,
+    "candidate_count": 6
+  },
+  "tool_calls": [
+    {
+      "tool_name": "mllm_scene_prior",
+      "image_id": 0,
+      "provider_status": "ok",
+      "parse_status": "ok",
+      "repair_used": false,
+      "fallback_used": false,
+      "fallback_reason": "",
+      "latency_ms": 6695,
+      "prompt_tokens": 898,
+      "completion_tokens": 262,
+      "total_tokens": 1160,
+      "raw_output_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/mllm_scene_prior/image_0000_raw.json",
+      "validated_output_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/mllm_scene_prior/image_0000_validated.json",
+      "raw_output": {
+        "provider_raw": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n  \"scene_type\": \"outdoor nature scene\",\n  \"image_style\": \"clipart\",\n  \"visible_object_hints\": [\n    \"bird\"\n  ],\n  \"unlikely_classes\": [\n    \"aeroplane\",\n    \"bicycle\",\n    \"boat\",\n    \"bottle\",\n    \"bus\",\n    \"car\",\n    \"cat\",\n    \"chair\",\n    \"cow\",\n    \"diningtable\",\n    \"dog\",\n    \"horse\",\n    \"motorbike\",\n    \"person\",\n    \"pottedplant\",\n    \"sheep\",\n    \"sofa\",\n    \"train\",\n    \"tvmonitor\"\n  ],\n  \"potential_confusions\": [\n    {\n      \"class_a\": \"bird\",\n      \"class_b\": \"aeroplane\",\n      \"reason\": \"flying object shape\"\n    }\n  ],\n  \"review_guidance\": [\n    \"Verify bounding boxes tightly enclose the birds.\",\n    \"Check for false positives on the wooden signpost.\",\n    \"Ensure flying birds are not missed.\"\n  ],\n  \"confidence\": \"high\"\n}"
+              }
+            }
+          ],
+          "created": 1778301660,
+          "model": "Qwen3.6-27B-UD-Q4_K_XL.gguf",
+          "system_fingerprint": "b0-unknown",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 262,
+            "prompt_tokens": 898,
+            "total_tokens": 1160,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "id": "chatcmpl-ygsOJ0J2D2pVtKuqDxLaoftcEHpCfIqA",
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 898,
+            "prompt_ms": 487.175,
+            "prompt_per_token_ms": 0.542511135857461,
+            "prompt_per_second": 1843.280135474932,
+            "predicted_n": 262,
+            "predicted_ms": 5906.244,
+            "predicted_per_token_ms": 22.54291603053435,
+            "predicted_per_second": 44.359833423746124
+          }
+        },
+        "content": "{\n  \"scene_type\": \"outdoor nature scene\",\n  \"image_style\": \"clipart\",\n  \"visible_object_hints\": [\n    \"bird\"\n  ],\n  \"unlikely_classes\": [\n    \"aeroplane\",\n    \"bicycle\",\n    \"boat\",\n    \"bottle\",\n    \"bus\",\n    \"car\",\n    \"cat\",\n    \"chair\",\n    \"cow\",\n    \"diningtable\",\n    \"dog\",\n    \"horse\",\n    \"motorbike\",\n    \"person\",\n    \"pottedplant\",\n    \"sheep\",\n    \"sofa\",\n    \"train\",\n    \"tvmonitor\"\n  ],\n  \"potential_confusions\": [\n    {\n      \"class_a\": \"bird\",\n      \"class_b\": \"aeroplane\",\n      \"reason\": \"flying object shape\"\n    }\n  ],\n  \"review_guidance\": [\n    \"Verify bounding boxes tightly enclose the birds.\",\n    \"Check for false positives on the wooden signpost.\",\n    \"Ensure flying birds are not missed.\"\n  ],\n  \"confidence\": \"high\"\n}",
+        "error": ""
+      },
+      "validated_output": {
+        "scene_type": "outdoor nature scene",
+        "image_style": "clipart",
+        "visible_object_hints": [
+          "bird"
+        ],
+        "unlikely_classes": [
+          "aeroplane",
+          "bicycle",
+          "boat",
+          "bottle",
+          "bus",
+          "car",
+          "cat",
+          "chair",
+          "cow",
+          "diningtable",
+          "dog",
+          "horse",
+          "motorbike",
+          "person",
+          "pottedplant",
+          "sheep",
+          "sofa",
+          "train",
+          "tvmonitor"
+        ],
+        "potential_confusions": [
+          {
+            "class_a": "bird",
+            "class_b": "aeroplane",
+            "reason": "flying object shape"
+          }
+        ],
+        "review_guidance": [
+          "Verify bounding boxes tightly enclose the birds.",
+          "Check for false positives on the wooden signpost.",
+          "Ensure flying birds are not missed."
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "tool_name": "resolve_duplicate_cluster_info",
+      "image_id": 0,
+      "provider_status": "local",
+      "parse_status": "ok",
+      "repair_used": false,
+      "fallback_used": false,
+      "fallback_reason": "duplicate cluster information generated",
+      "latency_ms": 0,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "raw_output_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/local_tools/image_0000_duplicate_clusters_raw.json",
+      "validated_output_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/local_tools/image_0000_duplicate_clusters_validated.json",
+      "raw_output": {
+        "tool_name": "resolve_duplicate_cluster_info",
+        "status": "success",
+        "payload": {
+          "image_id": 0,
+          "iou_threshold": 0.4,
+          "class_agnostic": true,
+          "duplicate_clusters": [
+            {
+              "duplicate_cluster_id": 0,
+              "class_name": "bird",
+              "class_names": [
+                "bird"
+              ],
+              "proposal_ids": [
+                1,
+                5
+              ],
+              "scores": {
+                "1": 0.736328,
+                "5": 0.119385
+              },
+              "bboxes": {
+                "1": [
+                  14.0,
+                  134.0,
+                  155.0,
+                  236.0
+                ],
+                "5": [
+                  60.0,
+                  133.0,
+                  155.0,
+                  234.0
+                ]
+              },
+              "max_pairwise_iou": 0.656213,
+              "cluster_size": 2,
+              "note": "cluster information only; this tool does not decide keep/drop"
+            },
+            {
+              "duplicate_cluster_id": 1,
+              "class_name": "bird",
+              "class_names": [
+                "bird"
+              ],
+              "proposal_ids": [
+                2,
+                3
+              ],
+              "scores": {
+                "2": 0.698242,
+                "3": 0.147583
+              },
+              "bboxes": {
+                "2": [
+                  197.0,
+                  545.0,
+                  370.0,
+                  672.0
+                ],
+                "3": [
+                  197.0,
+                  544.0,
+                  479.0,
+                  672.0
+                ]
+              },
+              "max_pairwise_iou": 0.608682,
+              "cluster_size": 2,
+              "note": "cluster information only; this tool does not decide keep/drop"
+            }
+          ],
+          "cluster_count": 2,
+          "status": "success"
+        },
+        "error_code": "",
+        "message": "duplicate cluster information generated"
+      },
+      "validated_output": {
+        "tool_name": "resolve_duplicate_cluster_info",
+        "status": "success",
+        "payload": {
+          "image_id": 0,
+          "iou_threshold": 0.4,
+          "class_agnostic": true,
+          "duplicate_clusters": [
+            {
+              "duplicate_cluster_id": 0,
+              "class_name": "bird",
+              "class_names": [
+                "bird"
+              ],
+              "proposal_ids": [
+                1,
+                5
+              ],
+              "scores": {
+                "1": 0.736328,
+                "5": 0.119385
+              },
+              "bboxes": {
+                "1": [
+                  14.0,
+                  134.0,
+                  155.0,
+                  236.0
+                ],
+                "5": [
+                  60.0,
+                  133.0,
+                  155.0,
+                  234.0
+                ]
+              },
+              "max_pairwise_iou": 0.656213,
+              "cluster_size": 2,
+              "note": "cluster information only; this tool does not decide keep/drop"
+            },
+            {
+              "duplicate_cluster_id": 1,
+              "class_name": "bird",
+              "class_names": [
+                "bird"
+              ],
+              "proposal_ids": [
+                2,
+                3
+              ],
+              "scores": {
+                "2": 0.698242,
+                "3": 0.147583
+              },
+              "bboxes": {
+                "2": [
+                  197.0,
+                  545.0,
+                  370.0,
+                  672.0
+                ],
+                "3": [
+                  197.0,
+                  544.0,
+                  479.0,
+                  672.0
+                ]
+              },
+              "max_pairwise_iou": 0.608682,
+              "cluster_size": 2,
+              "note": "cluster information only; this tool does not decide keep/drop"
+            }
+          ],
+          "cluster_count": 2,
+          "status": "success"
+        },
+        "error_code": "",
+        "message": "duplicate cluster information generated"
+      }
+    },
+    {
+      "tool_name": "build_candidate_pool",
+      "image_id": 0,
+      "provider_status": "local",
+      "parse_status": "ok",
+      "repair_used": false,
+      "fallback_used": false,
+      "fallback_reason": "candidate pool built",
+      "latency_ms": 0,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "raw_output_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/local_tools/image_0000_candidate_pool_raw.json",
+      "validated_output_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/local_tools/image_0000_candidate_pool_validated.json",
+      "raw_output": {
+        "tool_name": "build_candidate_pool",
+        "status": "success",
+        "payload": {
+          "image_id": 0,
+          "candidate_proposal_ids": [
+            1,
+            2,
+            3,
+            5,
+            4,
+            0
+          ],
+          "candidate_reasons": {
+            "1": [
+              "border_touching",
+              "duplicate_cluster",
+              "top_score_sanity_check"
+            ],
+            "2": [
+              "border_touching",
+              "duplicate_cluster"
+            ],
+            "3": [
+              "uncertain_score_band",
+              "border_touching",
+              "duplicate_cluster"
+            ],
+            "5": [
+              "uncertain_score_band",
+              "duplicate_cluster"
+            ],
+            "4": [
+              "uncertain_score_band",
+              "border_touching"
+            ],
+            "0": [
+              "top_score_sanity_check"
+            ]
+          },
+          "pool_policy": "uncertain_plus_structural_risk_v1",
+          "max_candidates": 32,
+          "status": "success"
+        },
+        "error_code": "",
+        "message": "candidate pool built"
+      },
+      "validated_output": {
+        "tool_name": "build_candidate_pool",
+        "status": "success",
+        "payload": {
+          "image_id": 0,
+          "candidate_proposal_ids": [
+            1,
+            2,
+            3,
+            5,
+            4,
+            0
+          ],
+          "candidate_reasons": {
+            "1": [
+              "border_touching",
+              "duplicate_cluster",
+              "top_score_sanity_check"
+            ],
+            "2": [
+              "border_touching",
+              "duplicate_cluster"
+            ],
+            "3": [
+              "uncertain_score_band",
+              "border_touching",
+              "duplicate_cluster"
+            ],
+            "5": [
+              "uncertain_score_band",
+              "duplicate_cluster"
+            ],
+            "4": [
+              "uncertain_score_band",
+              "border_touching"
+            ],
+            "0": [
+              "top_score_sanity_check"
+            ]
+          },
+          "pool_policy": "uncertain_plus_structural_risk_v1",
+          "max_candidates": 32,
+          "status": "success"
+        },
+        "error_code": "",
+        "message": "candidate pool built"
+      }
+    },
+    {
+      "tool_name": "proposal_verification",
+      "image_id": 0,
+      "proposal_id": 0,
+      "provider_status": "ok",
+      "parse_status": "ok",
+      "repair_used": false,
+      "fallback_used": false,
+      "fallback_reason": "",
+      "latency_ms": 1783,
+      "prompt_tokens": 1158,
+      "completion_tokens": 42,
+      "total_tokens": 1200,
+      "raw_output_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/proposal_verification/image_0000_proposal_0000_raw.json",
+      "validated_output_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/proposal_verification/image_0000_proposal_0000_validated.json",
+      "raw_output": {
+        "provider_raw": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n  \"proposal_id\": \"0\",\n  \"visual_validity\": \"invalid\",\n  \"evidence_strength\": \"strong\",\n  \"recommended_action\": \"drop\"\n}"
+              }
+            }
+          ],
+          "created": 1778301662,
+          "model": "Qwen3.6-27B-UD-Q4_K_XL.gguf",
+          "system_fingerprint": "b0-unknown",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 42,
+            "prompt_tokens": 1158,
+            "total_tokens": 1200,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "id": "chatcmpl-aoDxz8Otw9LNfpu3vWfzvj3kjWg1FdOf",
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 1158,
+            "prompt_ms": 622.762,
+            "prompt_per_token_ms": 0.5377910189982729,
+            "prompt_per_second": 1859.4583484541447,
+            "predicted_n": 42,
+            "predicted_ms": 932.548,
+            "predicted_per_token_ms": 22.20352380952381,
+            "predicted_per_second": 45.03789617263669
+          }
+        },
+        "content": "{\n  \"proposal_id\": \"0\",\n  \"visual_validity\": \"invalid\",\n  \"evidence_strength\": \"strong\",\n  \"recommended_action\": \"drop\"\n}",
+        "error": ""
+      },
+      "validated_output": {
+        "proposal_id": "0",
+        "visual_validity": "invalid",
+        "evidence_strength": "strong",
+        "recommended_action": "drop",
+        "inspection_status": "success",
+        "fallback_used": false
+      }
+    },
+    {
+      "tool_name": "llm_final_decision",
+      "image_id": 0,
+      "proposal_id": 0,
+      "provider_status": "ok",
+      "parse_status": "ok",
+      "repair_used": false,
+      "fallback_used": false,
+      "fallback_reason": "",
+      "latency_ms": 2153,
+      "prompt_tokens": 868,
+      "completion_tokens": 68,
+      "total_tokens": 936,
+      "raw_output_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/llm_final_decision/image_0000_proposal_0000_raw.json",
+      "validated_output_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/llm_final_decision/image_0000_proposal_0000_validated.json",
+      "raw_output": {
+        "provider_raw": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\"proposal_id\": \"0\", \"decision\": \"drop\", \"confidence\": \"high\", \"reason\": \"Strong visual evidence from VerifySingleBox_MM indicates the proposal is invalid, overriding the high teacher score.\", \"used_signals\": [\"teacher_score\", \"visual_validity\", \"evidence_strength\", \"prior\", \"context\"]}"
+              }
+            }
+          ],
+          "created": 1778301664,
+          "model": "Qwen3.6-27B-UD-Q4_K_XL.gguf",
+          "system_fingerprint": "b0-unknown",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 68,
+            "prompt_tokens": 868,
+            "total_tokens": 936,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "id": "chatcmpl-EJtKODQaEIJiDdACT4IXlfsZ2zqbvTG0",
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 868,
+            "prompt_ms": 437.825,
+            "prompt_per_token_ms": 0.5044066820276497,
+            "prompt_per_second": 1982.527265459944,
+            "predicted_n": 68,
+            "predicted_ms": 1520.13,
+            "predicted_per_token_ms": 22.35485294117647,
+            "predicted_per_second": 44.7330162551887
+          }
+        },
+        "content": "{\"proposal_id\": \"0\", \"decision\": \"drop\", \"confidence\": \"high\", \"reason\": \"Strong visual evidence from VerifySingleBox_MM indicates the proposal is invalid, overriding the high teacher score.\", \"used_signals\": [\"teacher_score\", \"visual_validity\", \"evidence_strength\", \"prior\", \"context\"]}",
+        "error": ""
+      },
+      "validated_output": {
+        "proposal_id": "0",
+        "decision": "drop",
+        "confidence": "high",
+        "reason": "Strong visual evidence from VerifySingleBox_MM indicates the proposal is invalid, overriding the high teacher score.",
+        "used_signals": [
+          "teacher_score",
+          "visual_validity",
+          "evidence_strength",
+          "prior",
+          "context"
+        ],
+        "status": "success"
+      }
+    },
+    {
+      "tool_name": "proposal_verification",
+      "image_id": 0,
+      "proposal_id": 1,
+      "provider_status": "ok",
+      "parse_status": "ok",
+      "repair_used": false,
+      "fallback_used": false,
+      "fallback_reason": "",
+      "latency_ms": 1780,
+      "prompt_tokens": 1142,
+      "completion_tokens": 42,
+      "total_tokens": 1184,
+      "raw_output_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/proposal_verification/image_0000_proposal_0001_raw.json",
+      "validated_output_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/proposal_verification/image_0000_proposal_0001_validated.json",
+      "raw_output": {
+        "provider_raw": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n  \"proposal_id\": \"1\",\n  \"visual_validity\": \"invalid\",\n  \"evidence_strength\": \"strong\",\n  \"recommended_action\": \"drop\"\n}"
+              }
+            }
+          ],
+          "created": 1778301666,
+          "model": "Qwen3.6-27B-UD-Q4_K_XL.gguf",
+          "system_fingerprint": "b0-unknown",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 42,
+            "prompt_tokens": 1142,
+            "total_tokens": 1184,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "id": "chatcmpl-DkoWxcDrIwxnhIfZKQPEN00O8Zl1uKHO",
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 1142,
+            "prompt_ms": 623.358,
+            "prompt_per_token_ms": 0.5458476357267951,
+            "prompt_per_second": 1832.0130647236422,
+            "predicted_n": 42,
+            "predicted_ms": 932.928,
+            "predicted_per_token_ms": 22.21257142857143,
+            "predicted_per_second": 45.019551348014
+          }
+        },
+        "content": "{\n  \"proposal_id\": \"1\",\n  \"visual_validity\": \"invalid\",\n  \"evidence_strength\": \"strong\",\n  \"recommended_action\": \"drop\"\n}",
+        "error": ""
+      },
+      "validated_output": {
+        "proposal_id": "1",
+        "visual_validity": "invalid",
+        "evidence_strength": "strong",
+        "recommended_action": "drop",
+        "inspection_status": "success",
+        "fallback_used": false
+      }
+    },
+    {
+      "tool_name": "optional_tool_planner",
+      "image_id": 0,
+      "proposal_id": 1,
+      "provider_status": "ok",
+      "parse_status": "ok",
+      "repair_used": false,
+      "fallback_used": false,
+      "fallback_reason": "",
+      "latency_ms": 2499,
+      "prompt_tokens": 989,
+      "completion_tokens": 80,
+      "total_tokens": 1069,
+      "raw_output_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/optional_tool_planner/image_0000_proposal_0001_raw.json",
+      "validated_output_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/optional_tool_planner/image_0000_proposal_0001_validated.json",
+      "raw_output": {
+        "provider_raw": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\"proposal_id\": \"1\", \"selected_tools\": [{\"tool_name\": \"retrieve_same_class_image_crops\", \"arguments\": {\"top_k\": 2}, \"reason\": \"Compare with duplicate proposal 5 to assess visual validity and border issues.\"}], \"reason\": \"Inspect local context and duplicate cluster to verify if the border-touching detection is a valid bird or false positive.\"}"
+              }
+            }
+          ],
+          "created": 1778301669,
+          "model": "Qwen3.6-27B-UD-Q4_K_XL.gguf",
+          "system_fingerprint": "b0-unknown",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 80,
+            "prompt_tokens": 989,
+            "total_tokens": 1069,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "id": "chatcmpl-5uXUqCo1hfiPyk45ATLi80JS3e7iOYAy",
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 989,
+            "prompt_ms": 459.624,
+            "prompt_per_token_ms": 0.4647360970677452,
+            "prompt_per_second": 2151.758828955842,
+            "predicted_n": 80,
+            "predicted_ms": 1797.648,
+            "predicted_per_token_ms": 22.470599999999997,
+            "predicted_per_second": 44.50259450125942
+          }
+        },
+        "content": "{\"proposal_id\": \"1\", \"selected_tools\": [{\"tool_name\": \"retrieve_same_class_image_crops\", \"arguments\": {\"top_k\": 2}, \"reason\": \"Compare with duplicate proposal 5 to assess visual validity and border issues.\"}], \"reason\": \"Inspect local context and duplicate cluster to verify if the border-touching detection is a valid bird or false positive.\"}",
+        "error": ""
+      },
+      "validated_output": {
+        "proposal_id": "1",
+        "selected_tools": [
+          {
+            "tool_name": "retrieve_same_class_image_crops",
+            "arguments": {
+              "top_k": 2
+            },
+            "reason": "Compare with duplicate proposal 5 to assess visual validity and border issues."
+          }
+        ],
+        "reason": "Inspect local context and duplicate cluster to verify if the border-touching detection is a valid bird or false positive.",
+        "status": "success"
+      }
+    },
+    {
+      "tool_name": "retrieve_same_class_image_crops",
+      "image_id": 0,
+      "provider_status": "local",
+      "parse_status": "ok",
+      "repair_used": false,
+      "fallback_used": false,
+      "fallback_reason": "same-class image crops retrieved",
+      "latency_ms": 0,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "raw_output_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/local_tools/image_0000_proposal_0001_same_class_refs_raw.json",
+      "validated_output_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/local_tools/image_0000_proposal_0001_same_class_refs_validated.json",
+      "raw_output": {
+        "tool_name": "retrieve_same_class_image_crops",
+        "status": "success",
+        "payload": {
+          "query_proposal_id": "1",
+          "class_name": "bird",
+          "retrieved_crops": [
+            {
+              "proposal_id": "0",
+              "score": 0.953125,
+              "bbox": [
+                433.0,
+                211.0,
+                616.0,
+                385.0
+              ],
+              "crop_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/same_class_refs/image_0000/query_0001/bird/proposal_0000.png",
+              "reason": "same_class_reference_high_score",
+              "verification_hint": "invalid"
+            },
+            {
+              "proposal_id": "2",
+              "score": 0.698242,
+              "bbox": [
+                197.0,
+                545.0,
+                370.0,
+                672.0
+              ],
+              "crop_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/same_class_refs/image_0000/query_0001/bird/proposal_0002.png",
+              "reason": "same_class_reference_high_score",
+              "verification_hint": ""
+            },
+            {
+              "proposal_id": "3",
+              "score": 0.147583,
+              "bbox": [
+                197.0,
+                544.0,
+                479.0,
+                672.0
+              ],
+              "crop_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/same_class_refs/image_0000/query_0001/bird/proposal_0003.png",
+              "reason": "same_class_reference_high_score",
+              "verification_hint": ""
+            },
+            {
+              "proposal_id": "4",
+              "score": 0.140869,
+              "bbox": [
+                12.0,
+                153.0,
+                75.0,
+                235.0
+              ],
+              "crop_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/same_class_refs/image_0000/query_0001/bird/proposal_0004.png",
+              "reason": "same_class_reference_high_score",
+              "verification_hint": ""
+            }
+          ],
+          "status": "success"
+        },
+        "error_code": "",
+        "message": "same-class image crops retrieved"
+      },
+      "validated_output": {
+        "tool_name": "retrieve_same_class_image_crops",
+        "status": "success",
+        "payload": {
+          "query_proposal_id": "1",
+          "class_name": "bird",
+          "retrieved_crops": [
+            {
+              "proposal_id": "0",
+              "score": 0.953125,
+              "bbox": [
+                433.0,
+                211.0,
+                616.0,
+                385.0
+              ],
+              "crop_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/same_class_refs/image_0000/query_0001/bird/proposal_0000.png",
+              "reason": "same_class_reference_high_score",
+              "verification_hint": "invalid"
+            },
+            {
+              "proposal_id": "2",
+              "score": 0.698242,
+              "bbox": [
+                197.0,
+                545.0,
+                370.0,
+                672.0
+              ],
+              "crop_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/same_class_refs/image_0000/query_0001/bird/proposal_0002.png",
+              "reason": "same_class_reference_high_score",
+              "verification_hint": ""
+            },
+            {
+              "proposal_id": "3",
+              "score": 0.147583,
+              "bbox": [
+                197.0,
+                544.0,
+                479.0,
+                672.0
+              ],
+              "crop_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/same_class_refs/image_0000/query_0001/bird/proposal_0003.png",
+              "reason": "same_class_reference_high_score",
+              "verification_hint": ""
+            },
+            {
+              "proposal_id": "4",
+              "score": 0.140869,
+              "bbox": [
+                12.0,
+                153.0,
+                75.0,
+                235.0
+              ],
+              "crop_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/same_class_refs/image_0000/query_0001/bird/proposal_0004.png",
+              "reason": "same_class_reference_high_score",
+              "verification_hint": ""
+            }
+          ],
+          "status": "success"
+        },
+        "error_code": "",
+        "message": "same-class image crops retrieved"
+      },
+      "proposal_id": 1
+    },
+    {
+      "tool_name": "llm_final_decision",
+      "image_id": 0,
+      "proposal_id": 1,
+      "provider_status": "ok",
+      "parse_status": "ok",
+      "repair_used": false,
+      "fallback_used": false,
+      "fallback_reason": "",
+      "latency_ms": 2878,
+      "prompt_tokens": 1421,
+      "completion_tokens": 93,
+      "total_tokens": 1514,
+      "raw_output_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/llm_final_decision/image_0000_proposal_0001_raw.json",
+      "validated_output_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/llm_final_decision/image_0000_proposal_0001_validated.json",
+      "raw_output": {
+        "provider_raw": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\"proposal_id\": \"1\", \"decision\": \"drop\", \"confidence\": \"high\", \"reason\": \"VerifySingleBox_MM reports strong evidence of visual invalidity for the bird proposal, recommending drop. This aligns with the high-confidence MLLM scene prior hinting at potential false positives and the need for tight bounding boxes.\", \"used_signals\": [\"teacher_score\", \"visual_validity\", \"evidence_strength\", \"prior\", \"context\"]}"
+              }
+            }
+          ],
+          "created": 1778301672,
+          "model": "Qwen3.6-27B-UD-Q4_K_XL.gguf",
+          "system_fingerprint": "b0-unknown",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 93,
+            "prompt_tokens": 1421,
+            "total_tokens": 1514,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "id": "chatcmpl-Lc3JtdQnKwcFDIaOBF2foC6jCr2TZqEM",
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 1421,
+            "prompt_ms": 626.722,
+            "prompt_per_token_ms": 0.4410429275158339,
+            "prompt_per_second": 2267.3529890445843,
+            "predicted_n": 93,
+            "predicted_ms": 2086.852,
+            "predicted_per_token_ms": 22.4392688172043,
+            "predicted_per_second": 44.56473195032518
+          }
+        },
+        "content": "{\"proposal_id\": \"1\", \"decision\": \"drop\", \"confidence\": \"high\", \"reason\": \"VerifySingleBox_MM reports strong evidence of visual invalidity for the bird proposal, recommending drop. This aligns with the high-confidence MLLM scene prior hinting at potential false positives and the need for tight bounding boxes.\", \"used_signals\": [\"teacher_score\", \"visual_validity\", \"evidence_strength\", \"prior\", \"context\"]}",
+        "error": ""
+      },
+      "validated_output": {
+        "proposal_id": "1",
+        "decision": "drop",
+        "confidence": "high",
+        "reason": "VerifySingleBox_MM reports strong evidence of visual invalidity for the bird proposal, recommending drop. This aligns with the high-confidence MLLM scene prior hinting at potential false positives and the need for tight bounding boxes.",
+        "used_signals": [
+          "teacher_score",
+          "visual_validity",
+          "evidence_strength",
+          "prior",
+          "context"
+        ],
+        "status": "success"
+      }
+    },
+    {
+      "tool_name": "proposal_verification",
+      "image_id": 0,
+      "proposal_id": 2,
+      "provider_status": "ok",
+      "parse_status": "ok",
+      "repair_used": false,
+      "fallback_used": false,
+      "fallback_reason": "",
+      "latency_ms": 1830,
+      "prompt_tokens": 1152,
+      "completion_tokens": 42,
+      "total_tokens": 1194,
+      "raw_output_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/proposal_verification/image_0000_proposal_0002_raw.json",
+      "validated_output_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/proposal_verification/image_0000_proposal_0002_validated.json",
+      "raw_output": {
+        "provider_raw": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n  \"proposal_id\": \"2\",\n  \"visual_validity\": \"invalid\",\n  \"evidence_strength\": \"strong\",\n  \"recommended_action\": \"drop\"\n}"
+              }
+            }
+          ],
+          "created": 1778301674,
+          "model": "Qwen3.6-27B-UD-Q4_K_XL.gguf",
+          "system_fingerprint": "b0-unknown",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 42,
+            "prompt_tokens": 1152,
+            "total_tokens": 1194,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "id": "chatcmpl-9J5DX2BUfUVsiUmigxZAjNLcLBcSOKch",
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 1152,
+            "prompt_ms": 628.609,
+            "prompt_per_token_ms": 0.5456675347222223,
+            "prompt_per_second": 1832.6177321673727,
+            "predicted_n": 42,
+            "predicted_ms": 933.166,
+            "predicted_per_token_ms": 22.218238095238096,
+            "predicted_per_second": 45.00806930385376
+          }
+        },
+        "content": "{\n  \"proposal_id\": \"2\",\n  \"visual_validity\": \"invalid\",\n  \"evidence_strength\": \"strong\",\n  \"recommended_action\": \"drop\"\n}",
+        "error": ""
+      },
+      "validated_output": {
+        "proposal_id": "2",
+        "visual_validity": "invalid",
+        "evidence_strength": "strong",
+        "recommended_action": "drop",
+        "inspection_status": "success",
+        "fallback_used": false
+      }
+    },
+    {
+      "tool_name": "optional_tool_planner",
+      "image_id": 0,
+      "proposal_id": 2,
+      "provider_status": "ok",
+      "parse_status": "ok",
+      "repair_used": false,
+      "fallback_used": false,
+      "fallback_reason": "",
+      "latency_ms": 2958,
+      "prompt_tokens": 986,
+      "completion_tokens": 100,
+      "total_tokens": 1086,
+      "raw_output_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/optional_tool_planner/image_0000_proposal_0002_raw.json",
+      "validated_output_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/optional_tool_planner/image_0000_proposal_0002_validated.json",
+      "raw_output": {
+        "provider_raw": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\"proposal_id\": \"2\", \"selected_tools\": [{\"tool_name\": \"retrieve_same_class_image_crops\", \"arguments\": {\"top_k\": 2}, \"reason\": \"Compare the invalid border-touching proposal with its high-IoU duplicate to assess visual consistency and potential false positive nature.\"}], \"reason\": \"The proposal is flagged as invalid and part of a duplicate cluster; comparing crops helps determine if the detection is a false positive or a valid but poorly localized object.\"}"
+              }
+            }
+          ],
+          "created": 1778301677,
+          "model": "Qwen3.6-27B-UD-Q4_K_XL.gguf",
+          "system_fingerprint": "b0-unknown",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 100,
+            "prompt_tokens": 986,
+            "total_tokens": 1086,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "id": "chatcmpl-33jvJg5koUhz7qMfbMxFBlHpuL69C5z4",
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 986,
+            "prompt_ms": 460.494,
+            "prompt_per_token_ms": 0.4670324543610548,
+            "prompt_per_second": 2141.1788210052678,
+            "predicted_n": 100,
+            "predicted_ms": 2249.885,
+            "predicted_per_token_ms": 22.49885,
+            "predicted_per_second": 44.4467161654929
+          }
+        },
+        "content": "{\"proposal_id\": \"2\", \"selected_tools\": [{\"tool_name\": \"retrieve_same_class_image_crops\", \"arguments\": {\"top_k\": 2}, \"reason\": \"Compare the invalid border-touching proposal with its high-IoU duplicate to assess visual consistency and potential false positive nature.\"}], \"reason\": \"The proposal is flagged as invalid and part of a duplicate cluster; comparing crops helps determine if the detection is a false positive or a valid but poorly localized object.\"}",
+        "error": ""
+      },
+      "validated_output": {
+        "proposal_id": "2",
+        "selected_tools": [
+          {
+            "tool_name": "retrieve_same_class_image_crops",
+            "arguments": {
+              "top_k": 2
+            },
+            "reason": "Compare the invalid border-touching proposal with its high-IoU duplicate to assess visual consistency and potential false positive nature."
+          }
+        ],
+        "reason": "The proposal is flagged as invalid and part of a duplicate cluster; comparing crops helps determine if the detection is a false positive or a valid but poorly localized object.",
+        "status": "success"
+      }
+    },
+    {
+      "tool_name": "retrieve_same_class_image_crops",
+      "image_id": 0,
+      "provider_status": "local",
+      "parse_status": "ok",
+      "repair_used": false,
+      "fallback_used": false,
+      "fallback_reason": "same-class image crops retrieved",
+      "latency_ms": 0,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "raw_output_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/local_tools/image_0000_proposal_0002_same_class_refs_raw.json",
+      "validated_output_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/local_tools/image_0000_proposal_0002_same_class_refs_validated.json",
+      "raw_output": {
+        "tool_name": "retrieve_same_class_image_crops",
+        "status": "success",
+        "payload": {
+          "query_proposal_id": "2",
+          "class_name": "bird",
+          "retrieved_crops": [
+            {
+              "proposal_id": "0",
+              "score": 0.953125,
+              "bbox": [
+                433.0,
+                211.0,
+                616.0,
+                385.0
+              ],
+              "crop_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/same_class_refs/image_0000/query_0002/bird/proposal_0000.png",
+              "reason": "same_class_reference_high_score",
+              "verification_hint": "invalid"
+            },
+            {
+              "proposal_id": "1",
+              "score": 0.736328,
+              "bbox": [
+                14.0,
+                134.0,
+                155.0,
+                236.0
+              ],
+              "crop_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/same_class_refs/image_0000/query_0002/bird/proposal_0001.png",
+              "reason": "same_class_reference_high_score",
+              "verification_hint": "invalid"
+            },
+            {
+              "proposal_id": "3",
+              "score": 0.147583,
+              "bbox": [
+                197.0,
+                544.0,
+                479.0,
+                672.0
+              ],
+              "crop_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/same_class_refs/image_0000/query_0002/bird/proposal_0003.png",
+              "reason": "same_class_reference_high_score",
+              "verification_hint": ""
+            },
+            {
+              "proposal_id": "4",
+              "score": 0.140869,
+              "bbox": [
+                12.0,
+                153.0,
+                75.0,
+                235.0
+              ],
+              "crop_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/same_class_refs/image_0000/query_0002/bird/proposal_0004.png",
+              "reason": "same_class_reference_high_score",
+              "verification_hint": ""
+            }
+          ],
+          "status": "success"
+        },
+        "error_code": "",
+        "message": "same-class image crops retrieved"
+      },
+      "validated_output": {
+        "tool_name": "retrieve_same_class_image_crops",
+        "status": "success",
+        "payload": {
+          "query_proposal_id": "2",
+          "class_name": "bird",
+          "retrieved_crops": [
+            {
+              "proposal_id": "0",
+              "score": 0.953125,
+              "bbox": [
+                433.0,
+                211.0,
+                616.0,
+                385.0
+              ],
+              "crop_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/same_class_refs/image_0000/query_0002/bird/proposal_0000.png",
+              "reason": "same_class_reference_high_score",
+              "verification_hint": "invalid"
+            },
+            {
+              "proposal_id": "1",
+              "score": 0.736328,
+              "bbox": [
+                14.0,
+                134.0,
+                155.0,
+                236.0
+              ],
+              "crop_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/same_class_refs/image_0000/query_0002/bird/proposal_0001.png",
+              "reason": "same_class_reference_high_score",
+              "verification_hint": "invalid"
+            },
+            {
+              "proposal_id": "3",
+              "score": 0.147583,
+              "bbox": [
+                197.0,
+                544.0,
+                479.0,
+                672.0
+              ],
+              "crop_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/same_class_refs/image_0000/query_0002/bird/proposal_0003.png",
+              "reason": "same_class_reference_high_score",
+              "verification_hint": ""
+            },
+            {
+              "proposal_id": "4",
+              "score": 0.140869,
+              "bbox": [
+                12.0,
+                153.0,
+                75.0,
+                235.0
+              ],
+              "crop_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/same_class_refs/image_0000/query_0002/bird/proposal_0004.png",
+              "reason": "same_class_reference_high_score",
+              "verification_hint": ""
+            }
+          ],
+          "status": "success"
+        },
+        "error_code": "",
+        "message": "same-class image crops retrieved"
+      },
+      "proposal_id": 2
+    },
+    {
+      "tool_name": "llm_final_decision",
+      "image_id": 0,
+      "proposal_id": 2,
+      "provider_status": "ok",
+      "parse_status": "ok",
+      "repair_used": false,
+      "fallback_used": false,
+      "fallback_reason": "",
+      "latency_ms": 2808,
+      "prompt_tokens": 1423,
+      "completion_tokens": 89,
+      "total_tokens": 1512,
+      "raw_output_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/llm_final_decision/image_0000_proposal_0002_raw.json",
+      "validated_output_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/llm_final_decision/image_0000_proposal_0002_validated.json",
+      "raw_output": {
+        "provider_raw": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\"proposal_id\": \"2\", \"decision\": \"drop\", \"confidence\": \"high\", \"reason\": \"VerifySingleBox_MM reports strong evidence of visual invalidity for the bird proposal, recommending drop. This aligns with the low teacher score and context of a border-touching detection in a clipart scene.\", \"used_signals\": [\"teacher_score\", \"visual_validity\", \"evidence_strength\", \"prior\", \"context\"]}"
+              }
+            }
+          ],
+          "created": 1778301679,
+          "model": "Qwen3.6-27B-UD-Q4_K_XL.gguf",
+          "system_fingerprint": "b0-unknown",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 89,
+            "prompt_tokens": 1423,
+            "total_tokens": 1512,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "id": "chatcmpl-AiRJDUoCuYOtIZXsbaQCfA5EbIUuUKvN",
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 1423,
+            "prompt_ms": 629.16,
+            "prompt_per_token_ms": 0.44213633169360506,
+            "prompt_per_second": 2261.7458198232566,
+            "predicted_n": 89,
+            "predicted_ms": 1997.512,
+            "predicted_per_token_ms": 22.443955056179774,
+            "predicted_per_second": 44.5554269511272
+          }
+        },
+        "content": "{\"proposal_id\": \"2\", \"decision\": \"drop\", \"confidence\": \"high\", \"reason\": \"VerifySingleBox_MM reports strong evidence of visual invalidity for the bird proposal, recommending drop. This aligns with the low teacher score and context of a border-touching detection in a clipart scene.\", \"used_signals\": [\"teacher_score\", \"visual_validity\", \"evidence_strength\", \"prior\", \"context\"]}",
+        "error": ""
+      },
+      "validated_output": {
+        "proposal_id": "2",
+        "decision": "drop",
+        "confidence": "high",
+        "reason": "VerifySingleBox_MM reports strong evidence of visual invalidity for the bird proposal, recommending drop. This aligns with the low teacher score and context of a border-touching detection in a clipart scene.",
+        "used_signals": [
+          "teacher_score",
+          "visual_validity",
+          "evidence_strength",
+          "prior",
+          "context"
+        ],
+        "status": "success"
+      }
+    },
+    {
+      "tool_name": "proposal_verification",
+      "image_id": 0,
+      "proposal_id": 3,
+      "provider_status": "ok",
+      "parse_status": "ok",
+      "repair_used": false,
+      "fallback_used": false,
+      "fallback_reason": "",
+      "latency_ms": 1842,
+      "prompt_tokens": 1176,
+      "completion_tokens": 42,
+      "total_tokens": 1218,
+      "raw_output_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/proposal_verification/image_0000_proposal_0003_raw.json",
+      "validated_output_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/proposal_verification/image_0000_proposal_0003_validated.json",
+      "raw_output": {
+        "provider_raw": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n  \"proposal_id\": \"3\",\n  \"visual_validity\": \"invalid\",\n  \"evidence_strength\": \"strong\",\n  \"recommended_action\": \"drop\"\n}"
+              }
+            }
+          ],
+          "created": 1778301681,
+          "model": "Qwen3.6-27B-UD-Q4_K_XL.gguf",
+          "system_fingerprint": "b0-unknown",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 42,
+            "prompt_tokens": 1176,
+            "total_tokens": 1218,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "id": "chatcmpl-TnIq3X2mprWXiDMpTHwE02IZK7rJGZOc",
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 1176,
+            "prompt_ms": 639.059,
+            "prompt_per_token_ms": 0.5434175170068027,
+            "prompt_per_second": 1840.205677410067,
+            "predicted_n": 42,
+            "predicted_ms": 933.657,
+            "predicted_per_token_ms": 22.229928571428573,
+            "predicted_per_second": 44.98440005269601
+          }
+        },
+        "content": "{\n  \"proposal_id\": \"3\",\n  \"visual_validity\": \"invalid\",\n  \"evidence_strength\": \"strong\",\n  \"recommended_action\": \"drop\"\n}",
+        "error": ""
+      },
+      "validated_output": {
+        "proposal_id": "3",
+        "visual_validity": "invalid",
+        "evidence_strength": "strong",
+        "recommended_action": "drop",
+        "inspection_status": "success",
+        "fallback_used": false
+      }
+    },
+    {
+      "tool_name": "optional_tool_planner",
+      "image_id": 0,
+      "proposal_id": 3,
+      "provider_status": "ok",
+      "parse_status": "ok",
+      "repair_used": false,
+      "fallback_used": false,
+      "fallback_reason": "",
+      "latency_ms": 2853,
+      "prompt_tokens": 995,
+      "completion_tokens": 95,
+      "total_tokens": 1090,
+      "raw_output_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/optional_tool_planner/image_0000_proposal_0003_raw.json",
+      "validated_output_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/optional_tool_planner/image_0000_proposal_0003_validated.json",
+      "raw_output": {
+        "provider_raw": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\"proposal_id\": \"3\", \"selected_tools\": [{\"tool_name\": \"retrieve_same_class_image_crops\", \"arguments\": {\"top_k\": 2}, \"reason\": \"Compare with higher-scoring duplicate (id 2) to validate visual validity and resolve cluster conflict.\"}], \"reason\": \"Low score and invalid visual validity suggest false positive; comparing with the high-scoring duplicate in the same cluster helps confirm if the object is real or noise.\"}"
+              }
+            }
+          ],
+          "created": 1778301684,
+          "model": "Qwen3.6-27B-UD-Q4_K_XL.gguf",
+          "system_fingerprint": "b0-unknown",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 95,
+            "prompt_tokens": 995,
+            "total_tokens": 1090,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "id": "chatcmpl-oDqcLpiNs4okKNaVHCkaIXIc0n6dZcfl",
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 995,
+            "prompt_ms": 467.67,
+            "prompt_per_token_ms": 0.4700201005025126,
+            "prompt_per_second": 2127.5685846857823,
+            "predicted_n": 95,
+            "predicted_ms": 2137.089,
+            "predicted_per_token_ms": 22.495673684210526,
+            "predicted_per_second": 44.45299189692147
+          }
+        },
+        "content": "{\"proposal_id\": \"3\", \"selected_tools\": [{\"tool_name\": \"retrieve_same_class_image_crops\", \"arguments\": {\"top_k\": 2}, \"reason\": \"Compare with higher-scoring duplicate (id 2) to validate visual validity and resolve cluster conflict.\"}], \"reason\": \"Low score and invalid visual validity suggest false positive; comparing with the high-scoring duplicate in the same cluster helps confirm if the object is real or noise.\"}",
+        "error": ""
+      },
+      "validated_output": {
+        "proposal_id": "3",
+        "selected_tools": [
+          {
+            "tool_name": "retrieve_same_class_image_crops",
+            "arguments": {
+              "top_k": 2
+            },
+            "reason": "Compare with higher-scoring duplicate (id 2) to validate visual validity and resolve cluster conflict."
+          }
+        ],
+        "reason": "Low score and invalid visual validity suggest false positive; comparing with the high-scoring duplicate in the same cluster helps confirm if the object is real or noise.",
+        "status": "success"
+      }
+    },
+    {
+      "tool_name": "retrieve_same_class_image_crops",
+      "image_id": 0,
+      "provider_status": "local",
+      "parse_status": "ok",
+      "repair_used": false,
+      "fallback_used": false,
+      "fallback_reason": "same-class image crops retrieved",
+      "latency_ms": 0,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "raw_output_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/local_tools/image_0000_proposal_0003_same_class_refs_raw.json",
+      "validated_output_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/local_tools/image_0000_proposal_0003_same_class_refs_validated.json",
+      "raw_output": {
+        "tool_name": "retrieve_same_class_image_crops",
+        "status": "success",
+        "payload": {
+          "query_proposal_id": "3",
+          "class_name": "bird",
+          "retrieved_crops": [
+            {
+              "proposal_id": "0",
+              "score": 0.953125,
+              "bbox": [
+                433.0,
+                211.0,
+                616.0,
+                385.0
+              ],
+              "crop_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/same_class_refs/image_0000/query_0003/bird/proposal_0000.png",
+              "reason": "same_class_reference_high_score",
+              "verification_hint": "invalid"
+            },
+            {
+              "proposal_id": "1",
+              "score": 0.736328,
+              "bbox": [
+                14.0,
+                134.0,
+                155.0,
+                236.0
+              ],
+              "crop_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/same_class_refs/image_0000/query_0003/bird/proposal_0001.png",
+              "reason": "same_class_reference_high_score",
+              "verification_hint": "invalid"
+            },
+            {
+              "proposal_id": "2",
+              "score": 0.698242,
+              "bbox": [
+                197.0,
+                545.0,
+                370.0,
+                672.0
+              ],
+              "crop_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/same_class_refs/image_0000/query_0003/bird/proposal_0002.png",
+              "reason": "same_class_reference_high_score",
+              "verification_hint": "invalid"
+            },
+            {
+              "proposal_id": "4",
+              "score": 0.140869,
+              "bbox": [
+                12.0,
+                153.0,
+                75.0,
+                235.0
+              ],
+              "crop_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/same_class_refs/image_0000/query_0003/bird/proposal_0004.png",
+              "reason": "same_class_reference_high_score",
+              "verification_hint": ""
+            }
+          ],
+          "status": "success"
+        },
+        "error_code": "",
+        "message": "same-class image crops retrieved"
+      },
+      "validated_output": {
+        "tool_name": "retrieve_same_class_image_crops",
+        "status": "success",
+        "payload": {
+          "query_proposal_id": "3",
+          "class_name": "bird",
+          "retrieved_crops": [
+            {
+              "proposal_id": "0",
+              "score": 0.953125,
+              "bbox": [
+                433.0,
+                211.0,
+                616.0,
+                385.0
+              ],
+              "crop_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/same_class_refs/image_0000/query_0003/bird/proposal_0000.png",
+              "reason": "same_class_reference_high_score",
+              "verification_hint": "invalid"
+            },
+            {
+              "proposal_id": "1",
+              "score": 0.736328,
+              "bbox": [
+                14.0,
+                134.0,
+                155.0,
+                236.0
+              ],
+              "crop_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/same_class_refs/image_0000/query_0003/bird/proposal_0001.png",
+              "reason": "same_class_reference_high_score",
+              "verification_hint": "invalid"
+            },
+            {
+              "proposal_id": "2",
+              "score": 0.698242,
+              "bbox": [
+                197.0,
+                545.0,
+                370.0,
+                672.0
+              ],
+              "crop_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/same_class_refs/image_0000/query_0003/bird/proposal_0002.png",
+              "reason": "same_class_reference_high_score",
+              "verification_hint": "invalid"
+            },
+            {
+              "proposal_id": "4",
+              "score": 0.140869,
+              "bbox": [
+                12.0,
+                153.0,
+                75.0,
+                235.0
+              ],
+              "crop_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/same_class_refs/image_0000/query_0003/bird/proposal_0004.png",
+              "reason": "same_class_reference_high_score",
+              "verification_hint": ""
+            }
+          ],
+          "status": "success"
+        },
+        "error_code": "",
+        "message": "same-class image crops retrieved"
+      },
+      "proposal_id": 3
+    },
+    {
+      "tool_name": "llm_final_decision",
+      "image_id": 0,
+      "proposal_id": 3,
+      "provider_status": "ok",
+      "parse_status": "ok",
+      "repair_used": false,
+      "fallback_used": false,
+      "fallback_reason": "",
+      "latency_ms": 2653,
+      "prompt_tokens": 1432,
+      "completion_tokens": 83,
+      "total_tokens": 1515,
+      "raw_output_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/llm_final_decision/image_0000_proposal_0003_raw.json",
+      "validated_output_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/llm_final_decision/image_0000_proposal_0003_validated.json",
+      "raw_output": {
+        "provider_raw": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\"proposal_id\": \"3\", \"decision\": \"drop\", \"confidence\": \"high\", \"reason\": \"Primary visual verification tool reports invalid visual validity with strong evidence strength, recommending drop. Low teacher score (0.147) and border-touching context further support rejection.\", \"used_signals\": [\"teacher_score\", \"visual_validity\", \"evidence_strength\", \"prior\", \"context\"]}"
+              }
+            }
+          ],
+          "created": 1778301687,
+          "model": "Qwen3.6-27B-UD-Q4_K_XL.gguf",
+          "system_fingerprint": "b0-unknown",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 83,
+            "prompt_tokens": 1432,
+            "total_tokens": 1515,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "id": "chatcmpl-A0RE3XOZfyYrL4UxNFnmtRjspBpSqhqo",
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 1432,
+            "prompt_ms": 627.563,
+            "prompt_per_token_ms": 0.4382423184357542,
+            "prompt_per_second": 2281.8426197847866,
+            "predicted_n": 83,
+            "predicted_ms": 1861.642,
+            "predicted_per_token_ms": 22.429421686746988,
+            "predicted_per_second": 44.58429708826939
+          }
+        },
+        "content": "{\"proposal_id\": \"3\", \"decision\": \"drop\", \"confidence\": \"high\", \"reason\": \"Primary visual verification tool reports invalid visual validity with strong evidence strength, recommending drop. Low teacher score (0.147) and border-touching context further support rejection.\", \"used_signals\": [\"teacher_score\", \"visual_validity\", \"evidence_strength\", \"prior\", \"context\"]}",
+        "error": ""
+      },
+      "validated_output": {
+        "proposal_id": "3",
+        "decision": "drop",
+        "confidence": "high",
+        "reason": "Primary visual verification tool reports invalid visual validity with strong evidence strength, recommending drop. Low teacher score (0.147) and border-touching context further support rejection.",
+        "used_signals": [
+          "teacher_score",
+          "visual_validity",
+          "evidence_strength",
+          "prior",
+          "context"
+        ],
+        "status": "success"
+      }
+    },
+    {
+      "tool_name": "proposal_verification",
+      "image_id": 0,
+      "proposal_id": 4,
+      "provider_status": "ok",
+      "parse_status": "ok",
+      "repair_used": false,
+      "fallback_used": false,
+      "fallback_reason": "",
+      "latency_ms": 1830,
+      "prompt_tokens": 1147,
+      "completion_tokens": 42,
+      "total_tokens": 1189,
+      "raw_output_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/proposal_verification/image_0000_proposal_0004_raw.json",
+      "validated_output_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/proposal_verification/image_0000_proposal_0004_validated.json",
+      "raw_output": {
+        "provider_raw": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n  \"proposal_id\": \"4\",\n  \"visual_validity\": \"invalid\",\n  \"evidence_strength\": \"strong\",\n  \"recommended_action\": \"drop\"\n}"
+              }
+            }
+          ],
+          "created": 1778301689,
+          "model": "Qwen3.6-27B-UD-Q4_K_XL.gguf",
+          "system_fingerprint": "b0-unknown",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 42,
+            "prompt_tokens": 1147,
+            "total_tokens": 1189,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "id": "chatcmpl-am2wt7H7P2naRmnSua7KU9Y8UMuYqVDQ",
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 1147,
+            "prompt_ms": 630.994,
+            "prompt_per_token_ms": 0.5501255448997385,
+            "prompt_per_second": 1817.7668884331704,
+            "predicted_n": 42,
+            "predicted_ms": 932.981,
+            "predicted_per_token_ms": 22.213833333333334,
+            "predicted_per_second": 45.01699391520299
+          }
+        },
+        "content": "{\n  \"proposal_id\": \"4\",\n  \"visual_validity\": \"invalid\",\n  \"evidence_strength\": \"strong\",\n  \"recommended_action\": \"drop\"\n}",
+        "error": ""
+      },
+      "validated_output": {
+        "proposal_id": "4",
+        "visual_validity": "invalid",
+        "evidence_strength": "strong",
+        "recommended_action": "drop",
+        "inspection_status": "success",
+        "fallback_used": false
+      }
+    },
+    {
+      "tool_name": "llm_final_decision",
+      "image_id": 0,
+      "proposal_id": 4,
+      "provider_status": "ok",
+      "parse_status": "ok",
+      "repair_used": false,
+      "fallback_used": false,
+      "fallback_reason": "",
+      "latency_ms": 2162,
+      "prompt_tokens": 875,
+      "completion_tokens": 66,
+      "total_tokens": 941,
+      "raw_output_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/llm_final_decision/image_0000_proposal_0004_raw.json",
+      "validated_output_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/llm_final_decision/image_0000_proposal_0004_validated.json",
+      "raw_output": {
+        "provider_raw": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\"proposal_id\": \"4\", \"decision\": \"drop\", \"confidence\": \"high\", \"reason\": \"Strong visual evidence indicates the proposal is invalid, and the low teacher score supports dropping it.\", \"used_signals\": [\"teacher_score\", \"visual_validity\", \"evidence_strength\", \"prior\", \"context\"]}"
+              }
+            }
+          ],
+          "created": 1778301691,
+          "model": "Qwen3.6-27B-UD-Q4_K_XL.gguf",
+          "system_fingerprint": "b0-unknown",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 66,
+            "prompt_tokens": 875,
+            "total_tokens": 941,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "id": "chatcmpl-LNsE5yAydXvnYaZb0aGg6RClN1jeyhnv",
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 875,
+            "prompt_ms": 440.322,
+            "prompt_per_token_ms": 0.5032251428571428,
+            "prompt_per_second": 1987.1821076394094,
+            "predicted_n": 66,
+            "predicted_ms": 1474.358,
+            "predicted_per_token_ms": 22.338757575757576,
+            "predicted_per_second": 44.76524697529366
+          }
+        },
+        "content": "{\"proposal_id\": \"4\", \"decision\": \"drop\", \"confidence\": \"high\", \"reason\": \"Strong visual evidence indicates the proposal is invalid, and the low teacher score supports dropping it.\", \"used_signals\": [\"teacher_score\", \"visual_validity\", \"evidence_strength\", \"prior\", \"context\"]}",
+        "error": ""
+      },
+      "validated_output": {
+        "proposal_id": "4",
+        "decision": "drop",
+        "confidence": "high",
+        "reason": "Strong visual evidence indicates the proposal is invalid, and the low teacher score supports dropping it.",
+        "used_signals": [
+          "teacher_score",
+          "visual_validity",
+          "evidence_strength",
+          "prior",
+          "context"
+        ],
+        "status": "success"
+      }
+    },
+    {
+      "tool_name": "proposal_verification",
+      "image_id": 0,
+      "proposal_id": 5,
+      "provider_status": "ok",
+      "parse_status": "ok",
+      "repair_used": false,
+      "fallback_used": false,
+      "fallback_reason": "",
+      "latency_ms": 1765,
+      "prompt_tokens": 1145,
+      "completion_tokens": 42,
+      "total_tokens": 1187,
+      "raw_output_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/proposal_verification/image_0000_proposal_0005_raw.json",
+      "validated_output_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/proposal_verification/image_0000_proposal_0005_validated.json",
+      "raw_output": {
+        "provider_raw": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n  \"proposal_id\": \"5\",\n  \"visual_validity\": \"invalid\",\n  \"evidence_strength\": \"strong\",\n  \"recommended_action\": \"drop\"\n}"
+              }
+            }
+          ],
+          "created": 1778301693,
+          "model": "Qwen3.6-27B-UD-Q4_K_XL.gguf",
+          "system_fingerprint": "b0-unknown",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 42,
+            "prompt_tokens": 1145,
+            "total_tokens": 1187,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "id": "chatcmpl-CC1JQjPfOrGxcK9at4xjOUBW3gxbtoIT",
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 1145,
+            "prompt_ms": 625.16,
+            "prompt_per_token_ms": 0.5459912663755458,
+            "prompt_per_second": 1831.5311280312242,
+            "predicted_n": 42,
+            "predicted_ms": 933.029,
+            "predicted_per_token_ms": 22.21497619047619,
+            "predicted_per_second": 45.01467800036226
+          }
+        },
+        "content": "{\n  \"proposal_id\": \"5\",\n  \"visual_validity\": \"invalid\",\n  \"evidence_strength\": \"strong\",\n  \"recommended_action\": \"drop\"\n}",
+        "error": ""
+      },
+      "validated_output": {
+        "proposal_id": "5",
+        "visual_validity": "invalid",
+        "evidence_strength": "strong",
+        "recommended_action": "drop",
+        "inspection_status": "success",
+        "fallback_used": false
+      }
+    },
+    {
+      "tool_name": "optional_tool_planner",
+      "image_id": 0,
+      "proposal_id": 5,
+      "provider_status": "ok",
+      "parse_status": "ok",
+      "repair_used": false,
+      "fallback_used": false,
+      "fallback_reason": "",
+      "latency_ms": 2686,
+      "prompt_tokens": 984,
+      "completion_tokens": 89,
+      "total_tokens": 1073,
+      "raw_output_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/optional_tool_planner/image_0000_proposal_0005_raw.json",
+      "validated_output_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/optional_tool_planner/image_0000_proposal_0005_validated.json",
+      "raw_output": {
+        "provider_raw": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\"proposal_id\": \"5\", \"selected_tools\": [{\"tool_name\": \"retrieve_same_class_image_crops\", \"arguments\": {\"top_k\": 2}, \"reason\": \"Compare with high-score duplicate (id 1) to validate visual validity and resolve cluster conflict.\"}], \"reason\": \"Low score and invalid visual validity in a duplicate cluster require local comparison to confirm if the proposal is a false positive or partial overlap.\"}"
+              }
+            }
+          ],
+          "created": 1778301696,
+          "model": "Qwen3.6-27B-UD-Q4_K_XL.gguf",
+          "system_fingerprint": "b0-unknown",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 89,
+            "prompt_tokens": 984,
+            "total_tokens": 1073,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "id": "chatcmpl-6xEn2SwwkL6REeRwGER4rIE1FoqTxAZL",
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 984,
+            "prompt_ms": 459.696,
+            "prompt_per_token_ms": 0.4671707317073171,
+            "prompt_per_second": 2140.545055863005,
+            "predicted_n": 89,
+            "predicted_ms": 2001.37,
+            "predicted_per_token_ms": 22.487303370786517,
+            "predicted_per_second": 44.46953836621914
+          }
+        },
+        "content": "{\"proposal_id\": \"5\", \"selected_tools\": [{\"tool_name\": \"retrieve_same_class_image_crops\", \"arguments\": {\"top_k\": 2}, \"reason\": \"Compare with high-score duplicate (id 1) to validate visual validity and resolve cluster conflict.\"}], \"reason\": \"Low score and invalid visual validity in a duplicate cluster require local comparison to confirm if the proposal is a false positive or partial overlap.\"}",
+        "error": ""
+      },
+      "validated_output": {
+        "proposal_id": "5",
+        "selected_tools": [
+          {
+            "tool_name": "retrieve_same_class_image_crops",
+            "arguments": {
+              "top_k": 2
+            },
+            "reason": "Compare with high-score duplicate (id 1) to validate visual validity and resolve cluster conflict."
+          }
+        ],
+        "reason": "Low score and invalid visual validity in a duplicate cluster require local comparison to confirm if the proposal is a false positive or partial overlap.",
+        "status": "success"
+      }
+    },
+    {
+      "tool_name": "retrieve_same_class_image_crops",
+      "image_id": 0,
+      "provider_status": "local",
+      "parse_status": "ok",
+      "repair_used": false,
+      "fallback_used": false,
+      "fallback_reason": "same-class image crops retrieved",
+      "latency_ms": 0,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "raw_output_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/local_tools/image_0000_proposal_0005_same_class_refs_raw.json",
+      "validated_output_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/local_tools/image_0000_proposal_0005_same_class_refs_validated.json",
+      "raw_output": {
+        "tool_name": "retrieve_same_class_image_crops",
+        "status": "success",
+        "payload": {
+          "query_proposal_id": "5",
+          "class_name": "bird",
+          "retrieved_crops": [
+            {
+              "proposal_id": "0",
+              "score": 0.953125,
+              "bbox": [
+                433.0,
+                211.0,
+                616.0,
+                385.0
+              ],
+              "crop_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/same_class_refs/image_0000/query_0005/bird/proposal_0000.png",
+              "reason": "same_class_reference_high_score",
+              "verification_hint": "invalid"
+            },
+            {
+              "proposal_id": "1",
+              "score": 0.736328,
+              "bbox": [
+                14.0,
+                134.0,
+                155.0,
+                236.0
+              ],
+              "crop_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/same_class_refs/image_0000/query_0005/bird/proposal_0001.png",
+              "reason": "same_class_reference_high_score",
+              "verification_hint": "invalid"
+            },
+            {
+              "proposal_id": "2",
+              "score": 0.698242,
+              "bbox": [
+                197.0,
+                545.0,
+                370.0,
+                672.0
+              ],
+              "crop_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/same_class_refs/image_0000/query_0005/bird/proposal_0002.png",
+              "reason": "same_class_reference_high_score",
+              "verification_hint": "invalid"
+            },
+            {
+              "proposal_id": "3",
+              "score": 0.147583,
+              "bbox": [
+                197.0,
+                544.0,
+                479.0,
+                672.0
+              ],
+              "crop_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/same_class_refs/image_0000/query_0005/bird/proposal_0003.png",
+              "reason": "same_class_reference_high_score",
+              "verification_hint": "invalid"
+            }
+          ],
+          "status": "success"
+        },
+        "error_code": "",
+        "message": "same-class image crops retrieved"
+      },
+      "validated_output": {
+        "tool_name": "retrieve_same_class_image_crops",
+        "status": "success",
+        "payload": {
+          "query_proposal_id": "5",
+          "class_name": "bird",
+          "retrieved_crops": [
+            {
+              "proposal_id": "0",
+              "score": 0.953125,
+              "bbox": [
+                433.0,
+                211.0,
+                616.0,
+                385.0
+              ],
+              "crop_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/same_class_refs/image_0000/query_0005/bird/proposal_0000.png",
+              "reason": "same_class_reference_high_score",
+              "verification_hint": "invalid"
+            },
+            {
+              "proposal_id": "1",
+              "score": 0.736328,
+              "bbox": [
+                14.0,
+                134.0,
+                155.0,
+                236.0
+              ],
+              "crop_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/same_class_refs/image_0000/query_0005/bird/proposal_0001.png",
+              "reason": "same_class_reference_high_score",
+              "verification_hint": "invalid"
+            },
+            {
+              "proposal_id": "2",
+              "score": 0.698242,
+              "bbox": [
+                197.0,
+                545.0,
+                370.0,
+                672.0
+              ],
+              "crop_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/same_class_refs/image_0000/query_0005/bird/proposal_0002.png",
+              "reason": "same_class_reference_high_score",
+              "verification_hint": "invalid"
+            },
+            {
+              "proposal_id": "3",
+              "score": 0.147583,
+              "bbox": [
+                197.0,
+                544.0,
+                479.0,
+                672.0
+              ],
+              "crop_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/same_class_refs/image_0000/query_0005/bird/proposal_0003.png",
+              "reason": "same_class_reference_high_score",
+              "verification_hint": "invalid"
+            }
+          ],
+          "status": "success"
+        },
+        "error_code": "",
+        "message": "same-class image crops retrieved"
+      },
+      "proposal_id": 5
+    },
+    {
+      "tool_name": "llm_final_decision",
+      "image_id": 0,
+      "proposal_id": 5,
+      "provider_status": "ok",
+      "parse_status": "ok",
+      "repair_used": false,
+      "fallback_used": false,
+      "fallback_reason": "",
+      "latency_ms": 2445,
+      "prompt_tokens": 1432,
+      "completion_tokens": 73,
+      "total_tokens": 1505,
+      "raw_output_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/llm_final_decision/image_0000_proposal_0005_raw.json",
+      "validated_output_path": "projects/voc_clipart_mllm_demo_256/results/reference_workflow_langgraph_256_agentic_tools_iou040/llm_final_decision/image_0000_proposal_0005_validated.json",
+      "raw_output": {
+        "provider_raw": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\"proposal_id\": \"5\", \"decision\": \"drop\", \"confidence\": \"high\", \"reason\": \"Strong visual evidence from VerifySingleBox_MM indicates the proposal is invalid, supported by low teacher score and invalid same-class references.\", \"used_signals\": [\"teacher_score\", \"visual_validity\", \"evidence_strength\", \"prior\", \"context\"]}"
+              }
+            }
+          ],
+          "created": 1778301698,
+          "model": "Qwen3.6-27B-UD-Q4_K_XL.gguf",
+          "system_fingerprint": "b0-unknown",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 73,
+            "prompt_tokens": 1432,
+            "total_tokens": 1505,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "id": "chatcmpl-InNGS0yMCGgyoOwHn8BlNVWOhZA5E7pC",
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 1432,
+            "prompt_ms": 630.584,
+            "prompt_per_token_ms": 0.4403519553072625,
+            "prompt_per_second": 2270.910774773861,
+            "predicted_n": 73,
+            "predicted_ms": 1635.623,
+            "predicted_per_token_ms": 22.405794520547946,
+            "predicted_per_second": 44.63131173870752
+          }
+        },
+        "content": "{\"proposal_id\": \"5\", \"decision\": \"drop\", \"confidence\": \"high\", \"reason\": \"Strong visual evidence from VerifySingleBox_MM indicates the proposal is invalid, supported by low teacher score and invalid same-class references.\", \"used_signals\": [\"teacher_score\", \"visual_validity\", \"evidence_strength\", \"prior\", \"context\"]}",
+        "error": ""
+      },
+      "validated_output": {
+        "proposal_id": "5",
+        "decision": "drop",
+        "confidence": "high",
+        "reason": "Strong visual evidence from VerifySingleBox_MM indicates the proposal is invalid, supported by low teacher score and invalid same-class references.",
+        "used_signals": [
+          "teacher_score",
+          "visual_validity",
+          "evidence_strength",
+          "prior",
+          "context"
+        ],
+        "status": "success"
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "mode": "mllm_reference_workflow_256",
+  "engine": "langgraph",
+  "data_path": "projects/voc_clipart_review_v2/exports/clipart_train_pseudo_256/pseudo_samples.json",
+  "limit": null,
+  "source_voc_root": "/path/to/VOC2012",
+  "reference_bank_dir": "projects/voc_clipart_mllm_demo_256/bank/reference_bank",
+  "reference_manifest_path": "projects/voc_clipart_mllm_demo_256/bank/reference_bank/class_exemplar_manifest.json",
+  "max_exemplars_per_class": 10,
+  "duplicate_iou_threshold": 0.4,
+  "duplicate_class_agnostic": true
+}

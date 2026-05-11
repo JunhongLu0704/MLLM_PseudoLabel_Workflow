@@ -1,0 +1,19 @@
+[project]
+name = "controlled-mllm-pseudolabel-workflow"
+version = "0.1.0"
+description = "Controlled MLLM workflow for pseudo-label quality verification."
+requires-python = ">=3.10"
+dependencies = [
+  "Pillow>=10.0",
+  "matplotlib>=3.8",
+  "langgraph>=1.0",
+]
+
+[tool.setuptools]
+packages = [
+  "mllm_pseudolabel_workflow",
+  "mllm_pseudolabel_workflow.src",
+  "mllm_pseudolabel_workflow.scripts",
+  "mllm_pseudolabel_workflow.tools",
+]
+

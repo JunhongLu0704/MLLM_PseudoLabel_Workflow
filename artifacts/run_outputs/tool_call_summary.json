@@ -1,0 +1,45 @@
+{
+  "mllm_scene_prior": {
+    "success": 256,
+    "prompt_tokens": 266075,
+    "completion_tokens": 75736,
+    "total_tokens": 341811,
+    "latency_ms": 2002601
+  },
+  "proposal_verification": {
+    "success": 1735,
+    "prompt_tokens": 2411016,
+    "completion_tokens": 73240,
+    "total_tokens": 2484256,
+    "latency_ms": 3542777
+  },
+  "optional_tool_planner": {
+    "success": 1339,
+    "prompt_tokens": 1640708,
+    "completion_tokens": 169744,
+    "total_tokens": 1810452,
+    "latency_ms": 5124627
+  },
+  "llm_final_decision": {
+    "success": 1735,
+    "prompt_tokens": 2358547,
+    "completion_tokens": 129421,
+    "total_tokens": 2487968,
+    "latency_ms": 4532067
+  },
+  "build_class_exemplar_bank": {
+    "success": 1
+  },
+  "resolve_duplicate_cluster_info": {
+    "success": 256
+  },
+  "build_candidate_pool": {
+    "success": 256
+  },
+  "retrieve_same_class_image_crops": {
+    "success": 1290
+  },
+  "retrieve_class_exemplars": {
+    "success": 766
+  }
+}

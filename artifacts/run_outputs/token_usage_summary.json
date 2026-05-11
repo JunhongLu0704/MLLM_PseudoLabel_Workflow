@@ -1,0 +1,108 @@
+{
+  "mllm_scene_prior": {
+    "calls": 256,
+    "prompt_tokens": 266075,
+    "completion_tokens": 75736,
+    "total_tokens": 341811,
+    "avg_prompt_tokens": 1039.36,
+    "avg_completion_tokens": 295.84,
+    "avg_total_tokens": 1335.2,
+    "latency_ms": 2002601,
+    "avg_latency_ms": 7822.66
+  },
+  "proposal_verification": {
+    "calls": 1735,
+    "prompt_tokens": 2411016,
+    "completion_tokens": 73240,
+    "total_tokens": 2484256,
+    "avg_prompt_tokens": 1389.63,
+    "avg_completion_tokens": 42.21,
+    "avg_total_tokens": 1431.85,
+    "latency_ms": 3542777,
+    "avg_latency_ms": 2041.95
+  },
+  "optional_tool_planner": {
+    "calls": 1339,
+    "prompt_tokens": 1640708,
+    "completion_tokens": 169744,
+    "total_tokens": 1810452,
+    "avg_prompt_tokens": 1225.32,
+    "avg_completion_tokens": 126.77,
+    "avg_total_tokens": 1352.09,
+    "latency_ms": 5124627,
+    "avg_latency_ms": 3827.2
+  },
+  "llm_final_decision": {
+    "calls": 1735,
+    "prompt_tokens": 2358547,
+    "completion_tokens": 129421,
+    "total_tokens": 2487968,
+    "avg_prompt_tokens": 1359.39,
+    "avg_completion_tokens": 74.59,
+    "avg_total_tokens": 1433.99,
+    "latency_ms": 4532067,
+    "avg_latency_ms": 2612.14
+  },
+  "build_class_exemplar_bank": {
+    "calls": 1,
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "avg_prompt_tokens": 0.0,
+    "avg_completion_tokens": 0.0,
+    "avg_total_tokens": 0.0,
+    "latency_ms": 0,
+    "avg_latency_ms": 0.0
+  },
+  "resolve_duplicate_cluster_info": {
+    "calls": 256,
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "avg_prompt_tokens": 0.0,
+    "avg_completion_tokens": 0.0,
+    "avg_total_tokens": 0.0,
+    "latency_ms": 0,
+    "avg_latency_ms": 0.0
+  },
+  "build_candidate_pool": {
+    "calls": 256,
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "avg_prompt_tokens": 0.0,
+    "avg_completion_tokens": 0.0,
+    "avg_total_tokens": 0.0,
+    "latency_ms": 0,
+    "avg_latency_ms": 0.0
+  },
+  "retrieve_same_class_image_crops": {
+    "calls": 1290,
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "avg_prompt_tokens": 0.0,
+    "avg_completion_tokens": 0.0,
+    "avg_total_tokens": 0.0,
+    "latency_ms": 0,
+    "avg_latency_ms": 0.0
+  },
+  "retrieve_class_exemplars": {
+    "calls": 766,
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "avg_prompt_tokens": 0.0,
+    "avg_completion_tokens": 0.0,
+    "avg_total_tokens": 0.0,
+    "latency_ms": 0,
+    "avg_latency_ms": 0.0
+  },
+  "_total": {
+    "calls": 7634,
+    "prompt_tokens": 6676346,
+    "completion_tokens": 448141,
+    "total_tokens": 7124487,
+    "latency_ms": 15202072
+  }
+}
