@@ -48,8 +48,6 @@
 ## 5. 文档入口
 
 - 完整技术说明：[docs/MLLM_PseudoLabel_Workflow_Demo.md](docs/MLLM_PseudoLabel_Workflow_Demo.md)
-- PDF 展示版：[docs/MLLM_PseudoLabel_Workflow_5page.pdf](docs/MLLM_PseudoLabel_Workflow_5page.pdf)
-- 可编辑 Word 摘要版：[docs/MLLM_PseudoLabel_Workflow_5page.docx](docs/MLLM_PseudoLabel_Workflow_5page.docx)
 - 案例追踪：[examples/](examples/)
 - 运行摘要：[artifacts/run_outputs/](artifacts/run_outputs/)
 - 代码运行说明：[CODE_USAGE.md](CODE_USAGE.md)
